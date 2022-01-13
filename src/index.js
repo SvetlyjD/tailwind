@@ -13,7 +13,7 @@ ReactDOM.render(
     <BrowserRouter>
       <HeaderApp></HeaderApp>
       <div className='pos'>
-        <div className='flex ml-20 w-10/12 bg-white'>
+        <div className='ml-2 sm:flex sm:ml-20 sm:w-10/12 sm:bg-white'>
           <Main></Main>
           <div className='ml-10 w-4/5'><App></App></div>
         </div>

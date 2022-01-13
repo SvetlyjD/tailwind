@@ -12,40 +12,62 @@ export default class HeaderApp extends React.Component {
 
     render() {
         return (
-            <div className='wrapper'>
-                <header>
-                    <div className='h-20 flex flex-nowrap bg-indigo-900 items-center text-white'>
-                        <div className='headerMain__logotype w-1/5 ml-20 items-center'>
-                            <div className='headerMain__logotypeText '> IPRN.pro</div>
+            <>
+                <header className='bg-indigo-900 text-white'>
+                    <div className='flex sm:flex sm:items-center sm:justify-start sm:w-5/6 sm:ml-20 sm:h-24 bg-indigo-400'>
+                        <div className='flex sm:w-1/3 sm:flex text-2xl'>
+                            <div className='mt-2 ml-4 w-6 h-6 sm:hidden'>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="" />
+                            </div>
+                            <div className='font-bold ml-3'>IPRN.pro</div>
                         </div>
-                        <div className='headerMain__сontainerlist w-1/2'>
-                            <div className='headerMain__list ml-5'>
-                                <span className='ml-20'>Dashboard</span>
-                                <span className='ml-20'>SMS</span>
-                                <span className='ml-20'>Voice</span>
-                                <span className='ml-20'>Payments</span>
-                                <span className='ml-20'>FAQ</span>
+                        <div className='hidden sm:flex sm:justify-start sm: w-1/3 sm:items-center'>
+                            <div className='ml-5'>Dashboard</div>
+                            <div className='ml-5'>SMS</div>
+                            <div className='ml-5'>Voice</div>
+                            <div className='ml-5'>Payments</div>
+                            <div className='ml-5'>FAQ</div>
+                        </div >
+                        <div className='flex justify-end w-1/2 sm:ml-20 sm:w-1/3 sm:flex sm:justify-end sm:items-center'>
+                            <div className=' mt-0 ml-2 mr-1 w-6 h-6 sm:hidden'>
+                                <img src="https://toto-school.ru/800/600/https/mayilcoaching.com/wp-content/uploads/2017/10/quality-500950_1920.png" alt="" />
+                            </div>
+                            <div className='hidden sm:text-sm sm:mt-2 sm:mr-2 sm:mb-1'>My Account</div>
+                            <div className='text-sm mt-2 mr-2 mb-1'>
+                                <nav>
+                                    <input type="checkbox" name="menu" id="btn-menu" />
+                                    <label for="btn-menu">My account</label>
+                                    <ul>
+                                        <div className='mt-3'><li><a href="#">menu</a></li></div>
+                                        <div className='mt-3'><li><a href="#">menu</a></li></div>
+                                        <div className='mt-3'><li><a href="#">menu</a></li></div>
+                                        <div className='mt-3'><li><a href="#">menu</a></li></div>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
-                        <div className='ml-5 '>
-                            <div className='ml-20 text-white'>My Account</div>
-                        </div>
-                    </div>
-                    <br></br>
-                    <div className='h-56 bg-indigo-900 flex flex-nowrap'>
-                        <div className='ml-20 items-center w-4/6 mt-20 text-white text-4xl'>
-                            My account
-                        </div>
-                        <div className='ml-20 mt-20 h-10 '>
-                            <button className="ml-4 border-solid border-2 border-white rounded-md text-white mt-5"> Download contract</button>
-                        </div>
+
                     </div>
                 </header>
-            
-                <footer>
-
-                </footer>
-            </div>
+                <div className='bg-indigo-900 text-white'>
+                    <div className='flex sm:flex sm:justify-start sm:w-5/6 sm:ml-20 sm:h-64 bg-indigo-400'>
+                        <div className='hidden sm:flex sm:justify-start sm: w-1/2 sm:text-4xl sm:h-28 sm:mt-10'>
+                            My account
+                        </div>
+                        <div className='w-1/3 mb-4 text-xl ml-4 flex sm:hidden'>
+                            My account
+                        </div>
+                        <div className='flex sm:w-2/3 sm:flex sm:justify-end'>
+                            <div className="flex w-auto ml-8 h-8 border-solid border border-white rounded-sm text-base text-white sm:mt-12 h-5`">
+                                <div className=' mt-2 ml-2 w-5 h-5 sm:hidden'>
+                                    <img src="https://www.pngplay.com/wp-content/uploads/8/Upload-Icon-Image-Transparent-Background.png" alt="" />
+                                </div>
+                                <div className='text-sm ml-2 mt-2 mr-2 mb-1'>Download contract</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </>
         )
     }
 }
